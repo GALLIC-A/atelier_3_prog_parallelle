@@ -1,0 +1,2 @@
+curl -X POST http://localhost:5001/compute -H "Content-Type: application/json" -d '{"numbers":[1,2,3]}'
+curl -X POST http://localhost:5002/compute -H "Content-Type: application/json" -d '{"numbers":[4,5,6]}'
