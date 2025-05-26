@@ -1,0 +1,14 @@
+version: '3'
+services:
+  worker1:
+    build: ./worker
+    container_name: worker1
+    ports:
+      - "5001:5000"
+  worker2:
+    build: ./worker
+    container_name: worker2
+    ports:
+      - "5002:5000"
+# Les deux conteneurs sont sur le même réseau Docker (créé automatiquement par Compose)
+#Les ports 5001 et 5002 du PC sont mappés vers le port 5000 de chaque worker.
